@@ -1,0 +1,4 @@
+<aura:event type="APPLICATION" description="Event template" >
+      <aura:attribute name="eventVar1" type="double" />
+    <aura:attribute name="eventVar2" type="double" />
+</aura:event>

@@ -1,0 +1,53 @@
+<aura:component
+                implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction"
+                access="global"
+                >
+  <!--  <aura:registerEvent name="change" type="c:mathEvent" />-->
+    <aura:registerEvent name="mathCmpEvent" type="c:mathCmpEvent" />
+    <aura:attribute name="variable1" type="Integer" default="20" />
+    <aura:attribute name="variable2" type="Integer" default="10" />
+    <aura:attribute name="variable3" type="String" default="+" />
+    <aura:attribute name="result" type="Integer" />
+    
+    <aura:handler name="init" value="{!this}" action="{!c.calcFun}" />
+    <aura:handler name="change" value="{!v.varible1}" action="{!c.calcFun}" />
+    <aura:handler name="change" value="{!v.variable2}" action="{!c.calcFun}" />
+   
+    <Lightning:input  type="number" aura:id="variable1" label="Enter number1:" value="{!v.variable1}" />
+    <Lightning:input  type="number" aura:id="variable2" label="Enter number2:" value="{!v.variable2}" />
+    <Lightning:input type="text" label="Enter operation to perform:" value="{!v.variable3}" />
+    <br />
+    <lightning:button
+                      variant="brand"
+                      label="Click"
+                      title="Brand action"
+                      onclick="{!c.calcFun}"
+                      />
+        <lightning:button
+                      variant="brand"
+                      label="Add"
+                      title="Brand action"
+                      onclick="{!c.Add}"
+                      />
+       <lightning:button
+                      variant="brand"
+                      label="Substract"
+                      title="Brand action"
+                      onclick="{!c.Diff}"
+                      />
+    
+       <lightning:button
+                      variant="brand"
+                      label="Multiply"
+                      title="Brand action"
+                      onclick="{!c.Multiply}"
+                      />
+       <lightning:button
+                      variant="brand"
+                      label="Divide"
+                      title="Brand action"
+                      onclick="{!c.Divide}"
+                      />
+    <br /> <br /> Result is : <Lightning:input type="number" aura:id="variable3" class="nalin" value="{!v.result}" /> <br />
+        
+</aura:component>
