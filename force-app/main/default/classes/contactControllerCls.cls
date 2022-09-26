@@ -10,4 +10,7 @@ public class contactControllerCls {
     public static String SayHiByNalin(){
         return 'Hi Nalin';
     }
+    public static String SayHiByRaja(){
+        return 'Hi Raja';
+    }
 }
