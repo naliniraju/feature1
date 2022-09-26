@@ -13,4 +13,7 @@ public class contactControllerCls {
     public static String SayHiByRaja1(){
         return 'Hi Raja1';
     }
+    public static String SayHiByAmar(){
+        return 'Hi Amar';
+    }
 }
