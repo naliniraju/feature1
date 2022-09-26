@@ -8,7 +8,5 @@ public class contactControllerCls {
         return contacts;
     }
     
-    public static String HelloBoss(){
-        return 'HelloBoss';
-    }
+    
 }
