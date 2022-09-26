@@ -10,4 +10,5 @@ public class contactControllerCls {
     
     public static String HelloBoss(){
         return 'HelloBoss';
+    }
 }
