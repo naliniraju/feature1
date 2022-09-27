@@ -11,4 +11,8 @@ public class apexclass {
         update  accountTobeupdated;
 
     }
+    public static String sayHello()
+    {
+        return "sayHello";
+    }
 }
