@@ -15,4 +15,8 @@ public class apexclass {
     {
         return "sayHello";
     }
+    public static String sayHi()
+    {
+        return "sayHi";
+    }
 }
