@@ -19,4 +19,8 @@ public class apexclass {
     {
         return "sayHi";
     }
+     public static String sayHiToNalin()
+    {
+        return "HiNalin";
+    }
 }
