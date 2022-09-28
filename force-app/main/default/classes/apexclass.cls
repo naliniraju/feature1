@@ -23,4 +23,8 @@ public class apexclass {
     {
         return "HiNalin";
     }
+    public static String sayHiToSowmya()
+    {
+        return "HiSowmya";
+    }
 }
