@@ -14,7 +14,7 @@ public class apexclass {
     pubilc static String SayHello(){
         return 'SayHello';
     }
-    pubilc static String SayHi(){
-        return 'SayHi';
+    pubilc static String SayHihello(){
+        return 'SayHiHello';
     }
 }
